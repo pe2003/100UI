@@ -33,8 +33,14 @@ h1 {
 }
 
 h2 {
-  color: #ff3366;
   margin-top: 0;
+  font-size: 1.4em;
+}
+
+h2 span {
+  float: right;
+  font-size: 0.8em;
+  opacity: 0.6;
 }
 
 p {
@@ -62,10 +68,24 @@ button {
   transition: all 0.3s;
 }
 
-button:hover,
-button:focus {
+button:hover {
   background: #ff3366;
   transform: scale(1.05);
+}
+
+.puzzle {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+  margin: 10px 0;
+}
+
+.puzzle span {
+  padding: 8px;
+  background: #333;
+  text-align: center;
+  border: 1px solid #555;
+  cursor: pointer;
 }
 
 .shake {
