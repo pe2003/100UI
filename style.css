@@ -1,0 +1,96 @@
+body {
+  font-family: 'Courier New', monospace;
+  background: #000;
+  color: #eee;
+  padding: 20px;
+  line-height: 1.8;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+h1 {
+  color: #ff0033;
+  text-align: center;
+  text-shadow: 0 0 15px #ff0000;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #888;
+  font-size: 1.1em;
+  margin-bottom: 40px;
+}
+
+.circle {
+  margin: 50px 0;
+  padding: 25px;
+  border: 1px solid #444;
+  border-radius: 10px;
+  background: #111;
+  position: relative;
+  overflow: hidden;
+}
+
+h2 {
+  color: #ff3366;
+  margin-top: 0;
+}
+
+p {
+  color: #aaa;
+  font-size: 0.95em;
+}
+
+input[type="tel"] {
+  padding: 12px;
+  width: 280px;
+  border: 1px solid #555;
+  background: #222;
+  color: #fff;
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+button {
+  padding: 10px 18px;
+  background: #ff0033;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+button:hover,
+button:focus {
+  background: #ff3366;
+  transform: scale(1.05);
+}
+
+.shake {
+  animation: shake 0.5s infinite;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+}
+
+.glitch {
+  animation: glitch 2s infinite;
+}
+
+@keyframes glitch {
+  0% { text-shadow: 0 0 5px #f0f; }
+  50% { text-shadow: 0 0 5px #0ff; }
+  100% { text-shadow: 0 0 5px #f0f; }
+}
+
+footer {
+  text-align: center;
+  margin-top: 80px;
+  color: #666;
+  font-size: 0.9em;
+}
